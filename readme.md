@@ -1,9 +1,9 @@
 # Feature Endpoint
 
 * AuthRoute
-* * login
-* * logout
-* * register
+    * login
+    * logout
+    * register
 
 * MenuRoute
 * * list menu dan kategori
