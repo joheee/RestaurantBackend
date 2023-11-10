@@ -1,6 +1,4 @@
 import express, { Request, Response , Application } from 'express';
-import swaggerUi from "swagger-ui-express";
-import swaggerJsdoc from "swagger-jsdoc";
 import dotenv from 'dotenv';
 import cors from 'cors'
 import { AuthRoute } from './routes/AuthRoute';
