@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 import cors from 'cors'
 import { AuthRoute } from './routes/AuthRoute';
 import { MenuRoute } from './routes/MenuRoute';
-import { OrderRoute } from './routes/OrderRoute';
 import { OwnerRoute } from './routes/OwnerRoute';
 // import { Options } from './config/SwaggerConfig';
 
@@ -16,7 +15,6 @@ app.use(cors())
 
 app.use('/auth', AuthRoute)
 app.use('/menu', MenuRoute)
-app.use('/order', OrderRoute)
 app.use('/owner', OwnerRoute)
 
 app.listen(port, () => {

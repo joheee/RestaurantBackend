@@ -1,10 +1,9 @@
 import { Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
 
+const prisma = new PrismaClient()
 export class MenuController {
-    
     static async viewMenu(req:Request, res:Response){
-        const prisma = new PrismaClient()
         try {
             const data = await prisma.menu.findMany({
                 include: {
@@ -19,7 +18,6 @@ export class MenuController {
     }
     
     static async createMenu(req: Request, res: Response) {
-        const prisma = new PrismaClient()
         try {
             const { id_kategori, nama, harga, gambar, jenis } = req.body
             const newData = await prisma.menu.create({
@@ -39,8 +37,6 @@ export class MenuController {
     }
 
     static async updateMenu(req: Request, res: Response) {
-        const prisma = new PrismaClient()
-    
         try {
             const { id } = req.params
             const existingMenu = await prisma.menu.findUnique({
@@ -71,8 +67,6 @@ export class MenuController {
     }
 
     static async deleteMenu(req: Request, res: Response) {
-        const prisma = new PrismaClient()
-    
         try {
             const { id } = req.params
         
