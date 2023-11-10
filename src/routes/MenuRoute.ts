@@ -5,5 +5,5 @@ export const MenuRoute: Router = express.Router();
 
 MenuRoute.get('/', MenuController.viewMenu)
 MenuRoute.post('/', MenuController.createMenu)
-MenuRoute.patch('/', MenuController.updateMenu)
-MenuRoute.delete('/', MenuController.deleteMenu)
+MenuRoute.patch('/:id', MenuController.updateMenu)
+MenuRoute.delete('/:id', MenuController.deleteMenu)
