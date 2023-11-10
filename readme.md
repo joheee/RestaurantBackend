@@ -6,10 +6,10 @@
     * register
 
 * MenuRoute
-    * list menu dan kategori
-    * create menu
-    * update menu
-    * delete menu
+    * [v] list menu dan kategori
+    * [v] create menu
+    * [v] update menu
+    * [v] delete menu
 
 * OrderRoute
     * tambah produk ke keranjang pesanan
