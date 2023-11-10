@@ -1,10 +1,10 @@
 import express, { Request, Response , Application } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors'
-import { AuthRoute } from './route/AuthRoute';
-import { MenuRoute } from './route/MenuRoute';
-import { OrderRoute } from './route/OrderRoute';
-import { OwnerRoute } from './route/OwnerRoute';
+import { AuthRoute } from './web/AuthRoute';
+import { MenuRoute } from './web/MenuRoute';
+import { OrderRoute } from './web/OrderRoute';
+import { OwnerRoute } from './web/OwnerRoute';
 
 dotenv.config();
 
