@@ -15,5 +15,4 @@
     * tambah produk ke keranjang pesanan
 
 * OwnerRoute
-    * manage pesanan
-        * update status pesanan
+    * update status pesanan
