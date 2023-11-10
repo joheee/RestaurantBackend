@@ -7,15 +7,13 @@
 
 * MenuRoute
     * list menu dan kategori
+    * create menu
+    * update menu
+    * delete menu
 
 * PesananRoute
     * tambah produk ke keranjang pesanan
 
 * OwnerRoute
-    * manage menu
-        * create menu
-        * update menu
-        * delete menu
-
     * manage pesanan
         * update status pesanan
