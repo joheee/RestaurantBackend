@@ -1,8 +1,6 @@
 import express, { Router, Request, Response } from 'express';
-
-
+import { OwnerController } from '../controller/OwnerController';
 
 export const OwnerRoute: Router = express.Router();
-OwnerRoute.get('/', (req: Request, res: Response) => {
-  res.send('Router is working!');
-})
+
+OwnerRoute.patch('/', OwnerController.updateStatus)

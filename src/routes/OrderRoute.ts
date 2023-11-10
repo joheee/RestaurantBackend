@@ -1,8 +1,6 @@
 import express, { Router, Request, Response } from 'express';
-
+import { OrderController } from '../controller/OrderController';
 
 
 export const OrderRoute: Router = express.Router();
-OrderRoute.get('/', (req: Request, res: Response) => {
-  res.send('Router is working!');
-})
+OrderRoute.post('/', OrderController.addOrder)
