@@ -1,10 +1,21 @@
 # Feature Endpoint
-* login
-* logout
-* register
-* home
-* list product
-* tambah produk ke keranjang
-* checkout
-* manage product
-* manage pesanan
+
+* AuthRoute
+* * login
+* * logout
+* * register
+
+* MenuRoute
+* * list menu dan kategori
+
+* PesananRoute
+* * tambah produk ke keranjang pesanan
+
+* OwnerRoute
+* * manage menu
+* * * create menu
+* * * update menu
+* * * delete menu
+
+* * manage pesanan
+* * * update status pesanan
